@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} "\.(jpe?g|gif|png|ico|html?|xml|css|js|rdf|rss|xsl|swf|flv)$"
+RewriteRule .+ /example.php?file=%{REQUEST_FILENAME} [L]
